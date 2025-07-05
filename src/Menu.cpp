@@ -23,6 +23,7 @@
 #include "DisplayModel.h"
 #include "FileHistory.h"
 #include "Theme.h"
+#include "DarkModeSubclass.h"
 #include "GlobalPrefs.h"
 #include "Annotation.h"
 #include "AppColors.h"
@@ -1016,6 +1017,9 @@ UINT_PTR removeIfNoDiskAccessPerm[] = {
     CmdPinSelectedDocument,
     CmdForgetSelectedDocument,
     CmdInvokeInverseSearch,
+    CmdCreateShortcutToFile,
+    CmdSaveEmbeddedFile,
+    CmdShowLog,
     0,
 };
 
@@ -2086,6 +2090,9 @@ void FreeMenuOwnerDrawInfoData(HMENU hmenu) {
 }
 
 void MarkMenuOwnerDraw(HMENU hmenu) {
+    if (gUseDarkModeLib && DarkMode::isEnabled()) {
+        return;
+    }
     if (!ThemeColorizeControls()) {
         return;
     }
