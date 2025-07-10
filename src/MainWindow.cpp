@@ -144,7 +144,19 @@ MainWindow::~MainWindow() {
     DeleteVecMembers(staticLinks);
     auto tabs = Tabs();
     DeleteVecMembers(tabs);
-    delete tabsCtrl;
+    {
+        MarkHWNDDestroyed(tabsCtrl->hwnd);
+        logf("~MainWindow: delete tabsCtrl: 0x%p, HWND: 0x%p\n", tabsCtrl, tabsCtrl->hwnd);
+        HWND hwndTemp = tabsCtrl->hwnd;
+        delete tabsCtrl;
+        tabsCtrl = nullptr;
+        Wnd* w = WndListFindByHwnd(hwndTemp);
+        if (w != nullptr) {
+            logf("~MainWindow: tabsCtrl->hwnd found in WndMap after delete tabsCtrl\n");
+            ReportIf(true);
+        }
+    }
+
     // cbHandler is passed into DocController and must be deleted afterwards
     // (all controllers should have been deleted prior to MainWindow, though)
     delete cbHandler;
