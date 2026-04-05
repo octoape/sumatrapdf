@@ -23,7 +23,7 @@ import {
 const { msbuildPath, llvmPdbutilPath } = detectVisualStudio2026();
 const slnPath = join("vs2022", "SumatraPDF.sln");
 
-const pdbFiles = ["libmupdf.pdb", "SumatraPDF-dll.pdb", "SumatraPDF.pdb"];
+const pdbFiles = ["SumatraPDF.pdb"];
 
 // === Secrets ===
 
@@ -311,7 +311,7 @@ async function buildPreRelease(
     }
 
     // build all targets
-    const targets = ["PdfFilter", "PdfPreview", "SumatraPDF", "SumatraPDF-dll"];
+    const targets = ["PdfFilter2", "PdfPreview2", "SumatraPDF"];
     const t = `/t:${targets.map((t) => t + ":Rebuild").join(";")}`;
     await runLogged(msbuildPath, [slnPath, t, p, `/m`]);
 
@@ -340,7 +340,7 @@ async function buildSmoke(): Promise<void> {
     throw new Error(`'${makeLzsa}' doesn't exist`);
   }
 
-  const t = `/t:SumatraPDF-dll:Rebuild;test_util:Rebuild`;
+  const t = `/t:SumatraPDF:Rebuild;test_util:Rebuild`;
   const p = `/p:Configuration=Release;Platform=x64`;
   await runLogged(msbuildPath, [slnPath, t, p, `/m`]);
 
@@ -353,8 +353,7 @@ async function buildSmoke(): Promise<void> {
     makeLzsa,
     [
       "SumatraPDF.pdb.lzsa",
-      "libmupdf.pdb:libmupdf.pdb",
-      "SumatraPDF-dll.pdb:SumatraPDF-dll.pdb",
+      "SumatraPDF.pdb:SumatraPDF.pdb",
     ],
     outDir,
   );
