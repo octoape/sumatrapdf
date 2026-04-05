@@ -517,7 +517,7 @@ IFACEMETHODIMP PreviewBase::DoPreview() {
     return S_OK;
 }
 
-EpubPreview::EpubPreview(long* plRefCount) : PreviewBase(plRefCount, kEpubPreviewClsid) {
+EpubPreview::EpubPreview(long* plRefCount) : PreviewBase(plRefCount, kEpubPreview2Clsid) {
     log("EpubPreview::EpubPreview()\n");
     m_gdiScope = new ScopedGdiPlus();
     mui::Initialize();
@@ -527,7 +527,7 @@ EpubPreview::~EpubPreview() {
     mui::Destroy();
 }
 
-Fb2Preview::Fb2Preview(long* plRefCount) : PreviewBase(plRefCount, kFb2PreviewClsid) {
+Fb2Preview::Fb2Preview(long* plRefCount) : PreviewBase(plRefCount, kFb2Preview2Clsid) {
     m_gdiScope = new ScopedGdiPlus();
     mui::Initialize();
 }
@@ -536,7 +536,7 @@ Fb2Preview::~Fb2Preview() {
     mui::Destroy();
 }
 
-MobiPreview::MobiPreview(long* plRefCount) : PreviewBase(plRefCount, kMobiPreviewClsid) {
+MobiPreview::MobiPreview(long* plRefCount) : PreviewBase(plRefCount, kMobiPreview2Clsid) {
     m_gdiScope = new ScopedGdiPlus();
     mui::Initialize();
 }

@@ -52,21 +52,21 @@ class PreviewClassFactory : public IClassFactory {
 
         ScopedComPtr<IInitializeWithStream> pObject;
 
-        if (IsClsid(kPdfPreviewClsid)) {
+        if (IsClsid(kPdfPreview2Clsid)) {
             pObject = new PdfPreview(&g_lRefCount);
-        } else if (IsClsid(kXpsPreviewClsid)) {
+        } else if (IsClsid(kXpsPreview2Clsid)) {
             pObject = new XpsPreview(&g_lRefCount);
-        } else if (IsClsid(kDjVuPreviewClsid)) {
+        } else if (IsClsid(kDjVuPreview2Clsid)) {
             pObject = new DjVuPreview(&g_lRefCount);
-        } else if (IsClsid(kEpubPreviewClsid)) {
+        } else if (IsClsid(kEpubPreview2Clsid)) {
             pObject = new EpubPreview(&g_lRefCount);
-        } else if (IsClsid(kFb2PreviewClsid)) {
+        } else if (IsClsid(kFb2Preview2Clsid)) {
             pObject = new Fb2Preview(&g_lRefCount);
-        } else if (IsClsid(kMobiPreviewClsid)) {
+        } else if (IsClsid(kMobiPreview2Clsid)) {
             pObject = new MobiPreview(&g_lRefCount);
-        } else if (IsClsid(kCbxPreviewClsid)) {
+        } else if (IsClsid(kCbxPreview2Clsid)) {
             pObject = new CbxPreview(&g_lRefCount);
-        } else if (IsClsid(kTgaPreviewClsid)) {
+        } else if (IsClsid(kTgaPreview2Clsid)) {
             pObject = new TgaPreview(&g_lRefCount);
         } else {
             return E_NOINTERFACE;

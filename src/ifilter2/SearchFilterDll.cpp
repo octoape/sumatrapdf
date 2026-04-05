@@ -22,13 +22,9 @@ long g_lRefCount = 0;
 
 class FilterClassFactory : public IClassFactory {
   public:
-    explicit FilterClassFactory(REFCLSID rclsid) : m_lRef(1), m_clsid(rclsid) {
-        InterlockedIncrement(&g_lRefCount);
-    }
+    explicit FilterClassFactory(REFCLSID rclsid) : m_lRef(1), m_clsid(rclsid) { InterlockedIncrement(&g_lRefCount); }
 
-    ~FilterClassFactory() {
-        InterlockedDecrement(&g_lRefCount);
-    }
+    ~FilterClassFactory() { InterlockedDecrement(&g_lRefCount); }
 
     // IUnknown
     IFACEMETHODIMP QueryInterface(REFIID riid, void** ppv) {
@@ -36,9 +32,7 @@ class FilterClassFactory : public IClassFactory {
         return QISearch(this, qit, riid, ppv);
     }
 
-    IFACEMETHODIMP_(ULONG) AddRef() {
-        return InterlockedIncrement(&m_lRef);
-    }
+    IFACEMETHODIMP_(ULONG) AddRef() { return InterlockedIncrement(&m_lRef); }
 
     IFACEMETHODIMP_(ULONG) Release() {
         long cRef = InterlockedDecrement(&m_lRef);
@@ -60,14 +54,14 @@ class FilterClassFactory : public IClassFactory {
         ScopedComPtr<IFilter> pFilter;
 
         CLSID clsid;
-        if (SUCCEEDED(CLSIDFromString(kPdfFilterClsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
+        if (SUCCEEDED(CLSIDFromString(kPdfFilter2Clsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
             pFilter = new PdfFilter(&g_lRefCount);
 #ifdef BUILD_TEX_IFILTER
-        } else if (SUCCEEDED(CLSIDFromString(kTexFilterClsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
+        } else if (SUCCEEDED(CLSIDFromString(kTexFilter2Clsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
             pFilter = new TeXFilter(&g_lRefCount);
 #endif
 #ifdef BUILD_EPUB_IFILTER
-        } else if (SUCCEEDED(CLSIDFromString(kEpubFilterClsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
+        } else if (SUCCEEDED(CLSIDFromString(kEpubFilter2Clsid, &clsid)) && IsEqualCLSID(m_clsid, clsid)) {
             pFilter = new EpubFilter(&g_lRefCount);
 #endif
         } else {

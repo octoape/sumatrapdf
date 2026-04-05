@@ -34,9 +34,7 @@ class PreviewBase : public IThumbnailProvider,
                                     {0}};
         return QISearch(this, qit, riid, ppv);
     }
-    IFACEMETHODIMP_(ULONG) AddRef() {
-        return InterlockedIncrement(&m_lRef);
-    }
+    IFACEMETHODIMP_(ULONG) AddRef() { return InterlockedIncrement(&m_lRef); }
     IFACEMETHODIMP_(ULONG) Release() {
         long cRef = InterlockedDecrement(&m_lRef);
         if (cRef == 0) {
@@ -151,9 +149,7 @@ class PreviewBase : public IThumbnailProvider,
         *phwnd = m_hwndParent;
         return S_OK;
     }
-    IFACEMETHODIMP ContextSensitiveHelp(__unused BOOL fEnterMode) {
-        return E_NOTIMPL;
-    }
+    IFACEMETHODIMP ContextSensitiveHelp(__unused BOOL fEnterMode) { return E_NOTIMPL; }
 
     PageRenderer* renderer = nullptr;
     PreviewPipeSession* pipeSession = nullptr;
@@ -178,36 +174,26 @@ class PreviewBase : public IThumbnailProvider,
 
 class PdfPreview : public PreviewBase {
   public:
-    PdfPreview(long* plRefCount) : PreviewBase(plRefCount, kPdfPreviewClsid) {
-    }
+    PdfPreview(long* plRefCount) : PreviewBase(plRefCount, kPdfPreview2Clsid) {}
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::PDF;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::PDF; }
 };
 
 class XpsPreview : public PreviewBase {
   public:
-    XpsPreview(long* plRefCount) : PreviewBase(plRefCount, kXpsPreviewClsid) {
-    }
+    XpsPreview(long* plRefCount) : PreviewBase(plRefCount, kXpsPreview2Clsid) {}
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::XPS;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::XPS; }
 };
 
 class DjVuPreview : public PreviewBase {
   public:
-    DjVuPreview(long* plRefCount) : PreviewBase(plRefCount, kDjVuPreviewClsid) {
-        m_gdiScope = new ScopedGdiPlus();
-    }
+    DjVuPreview(long* plRefCount) : PreviewBase(plRefCount, kDjVuPreview2Clsid) { m_gdiScope = new ScopedGdiPlus(); }
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::DjVu;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::DjVu; }
 };
 
 class EpubPreview : public PreviewBase {
@@ -216,9 +202,7 @@ class EpubPreview : public PreviewBase {
     ~EpubPreview();
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::EPUB;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::EPUB; }
 };
 
 class Fb2Preview : public PreviewBase {
@@ -227,9 +211,7 @@ class Fb2Preview : public PreviewBase {
     ~Fb2Preview();
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::FB2;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::FB2; }
 };
 
 class MobiPreview : public PreviewBase {
@@ -238,31 +220,21 @@ class MobiPreview : public PreviewBase {
     ~MobiPreview();
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::MOBI;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::MOBI; }
 };
 
 class CbxPreview : public PreviewBase {
   public:
-    CbxPreview(long* plRefCount) : PreviewBase(plRefCount, kCbxPreviewClsid) {
-        m_gdiScope = new ScopedGdiPlus();
-    }
+    CbxPreview(long* plRefCount) : PreviewBase(plRefCount, kCbxPreview2Clsid) { m_gdiScope = new ScopedGdiPlus(); }
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::CBX;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::CBX; }
 };
 
 class TgaPreview : public PreviewBase {
   public:
-    TgaPreview(long* plRefCount) : PreviewBase(plRefCount, kTgaPreviewClsid) {
-        m_gdiScope = new ScopedGdiPlus();
-    }
+    TgaPreview(long* plRefCount) : PreviewBase(plRefCount, kTgaPreview2Clsid) { m_gdiScope = new ScopedGdiPlus(); }
 
   protected:
-    PreviewFileType GetFileType() override {
-        return PreviewFileType::TGA;
-    }
+    PreviewFileType GetFileType() override { return PreviewFileType::TGA; }
 };
