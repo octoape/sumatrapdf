@@ -23,6 +23,22 @@ static struct {
     const char *ext = nullptr, *ext2 = nullptr;
     bool skip = false;
 } gPreviewers[] = {
+    {kPdfPreview2Clsid, ".pdf"},
+    {kCbxPreview2Clsid, ".cbz", ".cbr"},
+    {kCbxPreview2Clsid, ".cb7", ".cbt"},
+    {kTgaPreview2Clsid, ".tga"},
+    {kDjVuPreview2Clsid, ".djvu"},
+    {kXpsPreview2Clsid, ".xps", ".oxps"},
+    {kEpubPreview2Clsid, ".epub"},
+    {kFb2Preview2Clsid, ".fb2", ".fb2z"},
+    {kMobiPreview2Clsid, ".mobi"},
+};
+
+// previous CLSIDs, for uninstall compat
+static struct {
+    const char* clsid = nullptr;
+    const char *ext = nullptr, *ext2 = nullptr;
+} gPreviousPreviewers[] = {
     {kPdfPreviewClsid, ".pdf"},
     {kCbxPreviewClsid, ".cbz", ".cbr"},
     {kCbxPreviewClsid, ".cb7", ".cbt"},
@@ -87,48 +103,52 @@ static void DeleteOrFail(const char* key, HRESULT* hr) {
     }
 }
 
+static void UnregisterPreviewer(const char* clsid, const char* ext, const char* ext2, HRESULT* hr) {
+    TempStr key;
+    // unregister preview handler
+    DeleteRegValue(HKEY_LOCAL_MACHINE, kRegKeyPreviewHandlers, clsid);
+    DeleteRegValue(HKEY_CURRENT_USER, kRegKeyPreviewHandlers, clsid);
+    // remove class data
+    key = str::FormatTemp("Software\\Classes\\CLSID\\%s", clsid);
+    DeleteOrFail(key, hr);
+    // IThumbnailProvider
+    key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kThumbnailProviderClsid, ext);
+    DeleteOrFail(key, hr);
+    if (ext2) {
+        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kThumbnailProviderClsid, ext2);
+        DeleteOrFail(key, hr);
+    }
+    // IExtractImage (for Windows XP)
+    key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kExtractImageClsid, ext);
+    DeleteOrFail(key, hr);
+    if (ext2) {
+        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kExtractImageClsid, ext2);
+        DeleteOrFail(key, hr);
+    }
+    // IPreviewHandler
+    key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kPreviewHandlerClsid, ext);
+    DeleteOrFail(key, hr);
+    if (ext2) {
+        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kPreviewHandlerClsid, ext2);
+        DeleteOrFail(key, hr);
+    }
+}
+
 // we delete from HKLM and HKCU for compat with pre-3.4
 bool UninstallPreviewDll() {
     HRESULT hr = S_OK;
 
-    TempStr key;
     for (auto& prev : gPreviewers) {
         if (prev.skip) {
             logf("UninstallPreviewDll: skipping '%s'\n", prev.ext);
             continue;
         }
-        const char* clsid = prev.clsid;
-        const char* ext = prev.ext;
-        const char* ext2 = prev.ext2;
-
-        // unregister preview handler
-        DeleteRegValue(HKEY_LOCAL_MACHINE, kRegKeyPreviewHandlers, clsid);
-        DeleteRegValue(HKEY_CURRENT_USER, kRegKeyPreviewHandlers, clsid);
-        // remove class data
-        key = str::FormatTemp("Software\\Classes\\CLSID\\%s", clsid);
-        DeleteOrFail(key, &hr);
-        // IThumbnailProvider
-        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kThumbnailProviderClsid, ext);
-        DeleteOrFail(key, &hr);
-        if (ext2) {
-            key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kThumbnailProviderClsid, ext2);
-            DeleteOrFail(key, &hr);
-        }
-        // IExtractImage (for Windows XP)
-        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kExtractImageClsid, ext);
-        DeleteOrFail(key, &hr);
-        if (ext2) {
-            key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kExtractImageClsid, ext2);
-            DeleteOrFail(key, &hr);
-        }
-        // IPreviewHandler
-        key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kPreviewHandlerClsid, ext);
-        DeleteOrFail(key, &hr);
-        if (ext2) {
-            key = str::FormatTemp("Software\\Classes\\%s\\shellex\\" kPreviewHandlerClsid, ext2);
-            DeleteOrFail(key, &hr);
-        }
+        UnregisterPreviewer(prev.clsid, prev.ext, prev.ext2, &hr);
         logf("UninstallPreviewDll: removed '%s'\n", prev.ext);
+    }
+    // also remove previous PdfPreview CLSIDs
+    for (auto& prev : gPreviousPreviewers) {
+        UnregisterPreviewer(prev.clsid, prev.ext, prev.ext2, &hr);
     }
     return hr == S_OK ? true : false;
 }
@@ -151,7 +171,7 @@ void DisablePreviewInstallExts(const char* cmdLine) {
 bool IsPreviewInstalled() {
     const char* key = ".pdf\\shellex\\{8895b1c6-b41f-4c1c-a562-0d564250836f}";
     char* iid = LoggedReadRegStrTemp(HKEY_CLASSES_ROOT, key, nullptr);
-    bool isInstalled = str::EqI(iid, kPdfPreviewClsid);
+    bool isInstalled = str::EqI(iid, kPdfPreview2Clsid) || str::EqI(iid, kPdfPreviewClsid);
     logf("IsPreviewInstalled() isInstalled=%d\n", (int)isInstalled);
     return isInstalled;
 }

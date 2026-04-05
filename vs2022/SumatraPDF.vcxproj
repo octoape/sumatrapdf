@@ -415,7 +415,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/dbg32\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -431,7 +431,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbg32 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -454,7 +455,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/dbg64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -470,7 +471,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbg64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
@@ -493,7 +495,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/dbgarm64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -509,7 +511,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbgarm64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug x64_asan|x64'">
@@ -532,7 +535,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/dbg64_asan\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -548,7 +551,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbg64_asan &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugFull|Win32'">
@@ -571,7 +575,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/dbgfull32\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -587,7 +591,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbgfull32 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugFull|x64'">
@@ -610,7 +615,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/dbgfull64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -626,7 +631,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbgfull64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugFull|ARM64'">
@@ -649,7 +655,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/dbgfullarm64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -665,7 +671,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbgfullarm64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugFull x64_asan|x64'">
@@ -688,7 +695,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;DEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/dbgfull64_asan\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -704,7 +711,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/dbgfull64_asan &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -730,7 +738,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/rel32\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -748,7 +756,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel32 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -774,7 +783,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/rel64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -792,7 +801,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
@@ -818,7 +828,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/arm64\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -836,7 +846,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/arm64 &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release x64_asan|x64'">
@@ -862,7 +873,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/rel64_asan\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -879,7 +890,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel64_asan &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAnalyze|Win32'">
@@ -905,7 +917,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/rel32_prefast\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -924,7 +936,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel32_prefast &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAnalyze|x64'">
@@ -950,7 +963,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/rel64_prefast\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -969,7 +982,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel64_prefast &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAnalyze|ARM64'">
@@ -995,7 +1009,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;INSTALL_PAYLOAD_ZIP=.\../out/arm64_prefast\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -1014,7 +1028,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/arm64_prefast &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAnalyze x64_asan|x64'">
@@ -1040,7 +1055,7 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASAN_BUILD=1;WIN32;_WIN32;WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;_HAS_ITERATOR_DEBUGGING=0;NDEBUG;LIBARCHIVE_STATIC;_DARKMODELIB_NO_INI_CONFIG;_CRT_SECURE_NO_WARNINGS;DISABLE_DOCUMENT_RESTRICTIONS;_WIN64;INSTALL_PAYLOAD_ZIP=.\../out/rel64_prefast_asan\InstallerData.dat;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src;..\mupdf\include;..\ext\libdjvu;..\ext\CHMLib;..\ext\libarchive;..\ext\darkmodelib\include;..\packages\Microsoft.Web.WebView2.1.0.992.28\build\native\include;..\ext\zlib;..\ext\synctex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
@@ -1058,7 +1073,8 @@
     <ProjectReference>
     </ProjectReference>
     <PreBuildEvent>
-      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt</Command>
+      <Command>..\bin\MakeLZSA.exe ..\translations\translations.txt.lzsa ..\translations\translations-good.txt:translations-good.txt
+cd ../out/rel64_prefast_asan &amp; ..\..\bin\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

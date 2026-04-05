@@ -706,33 +706,6 @@ workspace "SumatraPDF"
     -- without this it's #define _UCRT_NAN (__ucrt_int_to_float(0x7FC00000))
     defines { "_UCRT_NOISY_NAN" }
 
-  project "libmupdf"
-    kind "SharedLib"
-    language "C"
-    optimized_conf()
-    disablewarnings { "4206", "4702" }
-    defines { "FZ_ENABLE_PDF=1", "FZ_ENABLE_SVG=1", "FZ_ENABLE_BROTLI=1", "FZ_ENABLE_BARCODE=0", "FZ_ENABLE_JS=1", "FZ_ENABLE_HYPHEN=0" }
-
-    filter { "platforms:arm64" }
-    defines { "ARCH_HAS_NEON=1" }
-    filter {}
-
-    -- premake has logic in vs2010_vcxproj.lua that only sets PlatformToolset
-    -- if there is a c/c++ file, so we add a no-op cpp file to force This logic
-    files { "src/libmupdf.rc", "src/libmupdf.def", "src/no_op_for_premake.cpp" }
-    implibname "libmupdf"
-    -- TODO: is thre a better way to do it?
-    -- linkoptions { "/DEF:..\\src\\libmupdf.def", "-IGNORE:4702" }
-    linkoptions { "-IGNORE:4702" }
-    links_zlib()
-    links { "mupdf", "libdjvu", "libwebp", "dav1d", "libheif" }
-    links {
-      "advapi32", "kernel32", "user32", "gdi32", "comdlg32",
-      "shell32", "windowscodecs", "comctl32", "msimg32",
-      "winspool", "wininet", "urlmon", "gdiplus", "ole32",
-      "oleAut32", "shlwapi", "version", "crypt32"
-    }
-
   project "utils"
     kind "StaticLib"
     language "C++"
@@ -776,21 +749,6 @@ workspace "SumatraPDF"
     bin2coff_files()
     links { "gdiplus", "comctl32", "shlwapi", "Version" }
 
-  project "PdfFilter"
-    kind "SharedLib"
-    language "C++"
-    cppdialect "C++latest"
-    mixed_dbg_rel_conf()
-    disablewarnings { "4100", "4838" }
-    defines { "HAVE_LIBARCHIVE", "LIBARCHIVE_STATIC" }
-    filter { "configurations:Debug" }
-    defines { "BUILD_TEX_IFILTER", "BUILD_EPUB_IFILTER" }
-    filter {}
-    includedirs { "src", "src/wingui", "mupdf/include", "ext/libarchive" }
-    search_filter_files()
-    links { "utils", "unrar", "libmupdf", "libarchive" }
-    links { "comctl32", "gdiplus", "shlwapi", "version", "wininet", "wintrust", "crypt32" }
-
   project "PdfFilter2"
     kind "SharedLib"
     language "C++"
@@ -813,24 +771,6 @@ workspace "SumatraPDF"
     pdf_preview2_files()
     -- TODO: "chm" should only be for Debug config but doing links { "chm" }
     -- in the filter breaks linking by setting LinkLibraryDependencies to false
-    links { "comctl32", "gdiplus", "msimg32", "shlwapi", "version", "wininet", "wintrust", "crypt32" }
-
-  project "PdfPreview"
-    kind "SharedLib"
-    language "C++"
-    cppdialect "C++latest"
-    mixed_dbg_rel_conf()
-    disablewarnings { "4100", "4838" }
-    defines { "HAVE_LIBARCHIVE", "LIBARCHIVE_STATIC" }
-    includedirs {
-      "src", "src/wingui", "mupdf/include",
-      "ext/libdjvu", "ext/CHMLib",
-      "ext/libarchive",
-    }
-    pdf_preview_files()
-    -- TODO: "chm" should only be for Debug config but doing links { "chm" }
-    -- in the filter breaks linking by setting LinkLibraryDependencies to false
-    links { "utils", "unrar", "libmupdf", "libarchive", "chm" }
     links { "comctl32", "gdiplus", "msimg32", "shlwapi", "version", "wininet", "wintrust", "crypt32" }
 
   -- a single static executable
@@ -892,79 +832,12 @@ workspace "SumatraPDF"
     linkoptions { "/DELAYLOAD:urlmon.dll /DELAYLOAD:wininet.dll" }
     linkoptions { "/DELAYLOAD:uiautomationcore.dll" }
     filter "platforms:x64_asan"
-    linkoptions { "/INFERASANLIBS" }
+        linkoptions { "/INFERASANLIBS" }
     filter {}
+    resdefines { "INSTALL_PAYLOAD_ZIP=.\\%{cfg.targetdir}\\InstallerData.dat" }
     dependson { "PdfFilter2", "PdfPreview2", "test_util" }
     prebuildcommands { "..\\bin\\MakeLZSA.exe ..\\translations\\translations.txt.lzsa ..\\translations\\translations-good.txt:translations-good.txt" }
-
-  -- a dll version where most functionality is in libmupdf.dll
-  project "SumatraPDF-dll"
-    kind "WindowedApp"
-    language "C++"
-    cppdialect "C++latest"
-    mixed_dbg_rel_conf()
-    warnings_as_errors()
-    entrypoint "WinMainCRTStartup"
-    manifest("Off")
-    defines { "LIBARCHIVE_STATIC" }
-    includedirs { "src", "mupdf/include" }
-    includedirs { "ext/synctex", "ext/libdjvu", "ext/CHMLib", "ext/libarchive" }
-    includedirs { "ext/darkmodelib/include" }
-
-    includedirs { "ext/darkmodelib/include" }
-    defines { "_DARKMODELIB_NO_INI_CONFIG" }
-    darkmodelib_files()
-
-    synctex_files()
-    mui_files()
-    wingui_files()
-    uia_files()
-    engines_files()
-    sumatrapdf_files()
-
-    webview_conf()
-
-    debugdir(".")
-
-    defines { "_CRT_SECURE_NO_WARNINGS" }
-    defines { "DISABLE_DOCUMENT_RESTRICTIONS" }
-
-    filter "configurations:ReleaseAnalyze"
-    -- TODO: somehow /analyze- is default which creates warning about
-    -- over-ride from cl.exe. Don't know how to disable the warning
-    buildoptions { "/analyze" }
-    disablewarnings { "28125", "28252", "28253" }
-    filter {}
-
-    -- for synctex
-    disablewarnings { "4100", "4244", "4267", "4702", "4706" }
-    uses_zlib()
-    includedirs { "ext/synctex" }
-
-    -- for uia
-    disablewarnings { "4302", "4311", "4838" }
-
-    disablewarnings { "4819" }
-
-    resdefines { "INSTALL_PAYLOAD_ZIP=.\\%{cfg.targetdir}\\InstallerData.dat" }
-
-    files { "src/MuPDF_Exports.cpp" }
-
-    links {
-      "libmupdf", "unrar", "libarchive", "utils", "chm"
-    }
-    links {
-      "comctl32", "delayimp", "gdiplus", "msimg32", "shlwapi", "urlmon",
-      "version", "wininet", "d2d1.lib", "uiautomationcore.lib", "uxtheme", "wintrust", "crypt32"
-    }
-    -- this is to prevent dll hijacking
-    linkoptions { "/DELAYLOAD:libmupdf.dll" }
-    linkoptions { "/DELAYLOAD:gdiplus.dll /DELAYLOAD:msimg32.dll /DELAYLOAD:shlwapi.dll" }
-    linkoptions { "/DELAYLOAD:urlmon.dll /DELAYLOAD:wininet.dll" }
-    linkoptions { "/DELAYLOAD:uiautomationcore.dll" }
-    dependson { "PdfFilter", "PdfPreview", "test_util" }
-    prebuildcommands { "..\\bin\\MakeLZSA.exe ..\\translations\\translations.txt.lzsa ..\\translations\\translations-good.txt:translations-good.txt" }
-    prebuildcommands { "cd %{cfg.targetdir} & ..\\..\\bin\\MakeLZSA.exe InstallerData.dat libmupdf.dll:libmupdf.dll PdfFilter.dll:PdfFilter.dll PdfPreview.dll:PdfPreview.dll" }
+    prebuildcommands { "cd %{cfg.targetdir} & ..\\..\\bin\\MakeLZSA.exe InstallerData.dat PdfFilter2.dll:PdfFilter2.dll PdfPreview2.dll:PdfPreview2.dll" }
 
 workspace "MakeLZSA"
   configurations { "Debug", "Release" }

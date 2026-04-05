@@ -10,6 +10,15 @@
 #define kCbxPreviewClsid "{C29D3E2B-8FF6-4033-A4E8-54221D859D74}"
 #define kTgaPreviewClsid "{CB1D63A6-FE5E-4DED-BEA5-3F6AF1A70D08}"
 
+#define kPdfPreview2Clsid "{F0FE6374-D0B4-4751-AE36-C57B96999E87}"
+#define kXpsPreview2Clsid "{B055DBB8-B29D-4E86-8E69-C649CE044B35}"
+#define kDjVuPreview2Clsid "{DB0BCEC8-57CE-4D21-97B8-E1DE9B8510BF}"
+#define kEpubPreview2Clsid "{C744BA15-7166-483E-9B2F-80F93F62C7FF}"
+#define kFb2Preview2Clsid "{58F5CCAA-36A9-413A-81BC-9F899AD3271B}"
+#define kMobiPreview2Clsid "{C21FF5DF-9AD7-43D8-A979-608C77CAC4AA}"
+#define kCbxPreview2Clsid "{886AD8B3-550D-4710-81B7-D5D422313B65}"
+#define kTgaPreview2Clsid "{A81391FC-C68F-4292-9ACC-F11F9484E95C}"
+
 bool InstallPreviewDll(const char* dllPath, bool allUsers);
 bool UninstallPreviewDll();
 void DisablePreviewInstallExts(const char* cmdLine);
