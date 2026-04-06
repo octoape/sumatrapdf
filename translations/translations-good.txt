@@ -17016,13 +17016,13 @@ ar:استخراج النص من PDF
 az:PDF-dən Mətni Çıxart
 bg:Извличане на текст от PDF
 bn:PDF থেকে টেক্সট বের করুন
-br:Eztennañ testenn eus PDF
+br:Extrair Texto do PDF
 bs:Izvuci tekst iz PDF-a
 by:Выняць тэкст з PDF
 ca:Extreu text del PDF
 ca-xv:Extreure text del PDF
 cn:从PDF提取文本
-co:Estrae u testu da u PDF
+co:Estrae testu da u PDF
 cy:Echdynnu Testun o PDF
 cz:Extrahovat text z PDF
 de:Text aus PDF extrahieren
@@ -39792,13 +39792,13 @@ ar:اضغط Esc للخروج
 az:Çıxmaq üçün Esc düyməsinə basın
 bg:Натиснете Esc за изход
 bn:প্রস্থান করতে Esc টগল করুন
-br:Pouezañ war Esc evit kuitaat
+br:Pressione o Esc pra Sair
 bs:Pritisni Esc za izlaz
 by:Націсніце Esc для выхаду
 ca:Prem Esc per sortir
 ca-xv:Prem Esc per sortir
 cn:按Esc退出
-co:Appughjà Esc per esce
+co:Attivà o disattivà u Scap. per esce
 cy:Toglo Esc i Adael
 cz:Stiskněte Esc pro ukončení
 de:Esc zum Beenden drücken
@@ -39837,13 +39837,13 @@ nl:Druk op Esc om af te sluiten
 nn:Trykk Esc for å avslutte
 no:Trykk Esc for å avslutte
 pa:ਬਾਹਰ ਜਾਣ ਲਈ Esc ਦਬਾਓ
-pl:Naciśnij Esc, aby wyjść
+pl:Przełączenie Esc, aby wyjść
 pt:Pressione Esc para Sair
 ro:Apasă Esc pentru a ieși
 ru:Нажмите Esc для выхода
 sat:ᱵᱟᱦᱨᱮ ᱞᱟᱹᱜᱤᱫ Esc ᱴᱚᱜᱚᱞ ᱢᱮ
 si:පිටවීමට Esc Toggle කරන්න
-sk:Stlačte Esc pre ukončenie
+sk:Prepnúť Ukončiť klávesom Esc
 sl:Pritisni Esc za izhod
 sn:Dzvanya Esc kuti Ubude
 sp-rs:Притисни Esc за излаз
@@ -40515,6 +40515,79 @@ tw:切換頁面資訊
 uk:Перемкнути інформацію про сторінку
 uz:Sahifa ma'lumotlarini yoqish/o'chirish
 vn:Bật/tắt thông tin trang
+:Toggle Promotions
+af:Wissel Promosies
+am:ማስተዋወቂያዎችን ቀይር
+ar:تبديل العروض الترويجية
+az:Kampaniyaları Aç/Bağla
+bg:Превключване на промоции
+bn:প্রচারগুলি টগল করুন
+br:Trec'haoliñ ar promosionoù
+bs:Uključi/isključi promocije
+by:Пераключыць акцыі
+ca:Alternar promocions
+ca-xv:Alternar promocions
+cn:切换促销
+co:Attivà/Disattivà e Prumuzioni
+cy:Toglo Hyrwyddiadau
+cz:Přepnout propagace
+de:Werbeaktionen umschalten
+dk:Skift kampagner
+el:Εναλλαγή Προωθητικών Ενεργειών
+es:Alternar promociones
+et:Lülita reklaamid sisse/välja
+eu:Txandakatu promozioak
+fa:تغییر وضعیت تبلیغات
+fi:Vaihda tarjoukset
+fo:Víxla tildøtur
+fr:Activer/désactiver les promotions
+fy-nl:Promocjes omskeakelje
+ga:Scoránaigh Promóisin
+gl:Alternar promocións
+he:הצג/הסתר מבצעים
+hi:प्रमोशन टॉगल करें
+hr:Uključi/isključi promocije
+hu:Promóciók váltása
+id:Alihkan Promosi
+it:Attiva/Disattiva Promozioni
+ja:プロモーションの切り替え
+jv:Togel Promosi
+ka:პრომოციების ჩართვა/გამორთვა
+kr:프로모션 전환
+ku:Pêşangehên Veguherîne
+kw:Towla Promosyonow
+lt:Perjungti akcijas
+lv:Pārslēgt akcijas
+mk:Вклучи/исклучи промоции
+ml:പ്രമോഷനുകൾ ടോഗിൾ ചെയ്യുക
+mm:ပရိုမိုးရှင်းများ ဖွင့်/ပိတ်ရန်
+my:ပရိုမိုးရှင်းများ ဖွင့်/ပိတ်ရန်
+ne:प्रमोशनहरू टगल गर्नुहोस्
+nl:Promoties weergeven/verbergen
+nn:Slå av/på kampanjar
+no:Veksle kampanjer
+pa:ਪ੍ਰਮੋਸ਼ਨ ਟੌਗਲ ਕਰੋ
+pl:Przełącz promocje
+pt:Alternar Promoções
+ro:Comutare promoții
+ru:Переключить акции
+sat:ᱯᱨᱳᱢᱳᱥᱚᱱ ᱵᱚᱫᱚᱞ ᱢᱮ
+si:ප්‍රවර්ධන ටොගල් කරන්න
+sk:Prepnúť propagácie
+sl:Preklopi promocije
+sn:Chinjirudza Kukwidziridza
+sp-rs:Uključi/isključi promocije
+sq:Aktivizo/Çaktivizo Promovime
+sr-rs:Прикажи/сакриј промоције
+sv:Växla kampanjer
+ta:விளம்பரங்களை நிலைமாற்று
+th:สลับโปรโมชัน
+tl:I-toggle ang mga Promosyon
+tr:Promosyonları Aç/Kapat
+tw:切換促銷活動
+uk:Перемкнути акції
+uz:Aksiyalarni almashtirish
+vn:Bật/tắt Khuyến mãi
 :Toggle Scrollbar In Single Page
 af:Wissel rolbalk in enkele bladsy
 am:በነጠላ ገጽ ውስጥ የማሸብለያ አሞሌ ቀያይር

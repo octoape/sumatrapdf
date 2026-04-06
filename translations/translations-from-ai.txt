@@ -44120,3 +44120,147 @@ uk:Натисніть Esc для виходу
 vn:Trích xuất văn bản từ PDF
 :Toggle Esc to Exit
 vn:Nhấn Esc để thoát
+:Toggle Promotions
+am:ማስተዋወቂያዎችን ቀይር
+:Toggle Promotions
+ar:تبديل العروض الترويجية
+:Toggle Promotions
+br:Trec'haoliñ ar promosionoù
+:Toggle Promotions
+cn:切换促销
+:Toggle Promotions
+co:Attivà/Disattivà e Prumuzioni
+:Toggle Promotions
+de:Werbeaktionen umschalten
+:Toggle Promotions
+el:Εναλλαγή Προωθητικών Ενεργειών
+:Toggle Promotions
+hi:प्रमोशन टॉगल करें
+:Toggle Promotions
+it:Attiva/Disattiva Promozioni
+:Toggle Promotions
+ja:プロモーションの切り替え
+:Toggle Promotions
+ml:പ്രമോഷനുകൾ ടോഗിൾ ചെയ്യുക
+:Toggle Promotions
+nl:Promoties weergeven/verbergen
+:Toggle Promotions
+pl:Przełącz promocje
+:Toggle Promotions
+ru:Переключить акции
+:Toggle Promotions
+sk:Prepnúť propagácie
+:Toggle Promotions
+sr-rs:Прикажи/сакриј промоције
+:Toggle Promotions
+tw:切換促銷活動
+:Toggle Promotions
+az:Kampaniyaları Aç/Bağla
+:Toggle Promotions
+by:Пераключыць акцыі
+:Toggle Promotions
+ca:Alternar promocions
+:Toggle Promotions
+cy:Toglo Hyrwyddiadau
+:Toggle Promotions
+cz:Přepnout propagace
+:Toggle Promotions
+es:Alternar promociones
+:Toggle Promotions
+fa:تغییر وضعیت تبلیغات
+:Toggle Promotions
+fi:Vaihda tarjoukset
+:Toggle Promotions
+fo:Víxla tildøtur
+:Toggle Promotions
+fr:Activer/désactiver les promotions
+:Toggle Promotions
+ga:Scoránaigh Promóisin
+:Toggle Promotions
+gl:Alternar promocións
+:Toggle Promotions
+he:הצג/הסתר מבצעים
+:Toggle Promotions
+hu:Promóciók váltása
+:Toggle Promotions
+id:Alihkan Promosi
+:Toggle Promotions
+kr:프로모션 전환
+:Toggle Promotions
+lv:Pārslēgt akcijas
+:Toggle Promotions
+my:ပရိုမိုးရှင်းများ ဖွင့်/ပိတ်ရန်
+:Toggle Promotions
+pt:Alternar Promoções
+:Toggle Promotions
+ro:Comutare promoții
+:Toggle Promotions
+sat:ᱯᱨᱳᱢᱳᱥᱚᱱ ᱵᱚᱫᱚᱞ ᱢᱮ
+:Toggle Promotions
+sl:Preklopi promocije
+:Toggle Promotions
+sv:Växla kampanjer
+:Toggle Promotions
+ta:விளம்பரங்களை நிலைமாற்று
+:Toggle Promotions
+tr:Promosyonları Aç/Kapat
+:Toggle Promotions
+uz:Aksiyalarni almashtirish
+:Toggle Promotions
+af:Wissel Promosies
+:Toggle Promotions
+bg:Превключване на промоции
+:Toggle Promotions
+bn:প্রচারগুলি টগল করুন
+:Toggle Promotions
+bs:Uključi/isključi promocije
+:Toggle Promotions
+ca-xv:Alternar promocions
+:Toggle Promotions
+dk:Skift kampagner
+:Toggle Promotions
+et:Lülita reklaamid sisse/välja
+:Toggle Promotions
+eu:Txandakatu promozioak
+:Toggle Promotions
+fy-nl:Promocjes omskeakelje
+:Toggle Promotions
+hr:Uključi/isključi promocije
+:Toggle Promotions
+jv:Togel Promosi
+:Toggle Promotions
+ka:პრომოციების ჩართვა/გამორთვა
+:Toggle Promotions
+ku:Pêşangehên Veguherîne
+:Toggle Promotions
+kw:Towla Promosyonow
+:Toggle Promotions
+lt:Perjungti akcijas
+:Toggle Promotions
+mk:Вклучи/исклучи промоции
+:Toggle Promotions
+mm:ပရိုမိုးရှင်းများ ဖွင့်/ပိတ်ရန်
+:Toggle Promotions
+ne:प्रमोशनहरू टगल गर्नुहोस्
+:Toggle Promotions
+nn:Slå av/på kampanjar
+:Toggle Promotions
+no:Veksle kampanjer
+:Toggle Promotions
+pa:ਪ੍ਰਮੋਸ਼ਨ ਟੌਗਲ ਕਰੋ
+:Toggle Promotions
+si:ප්‍රවර්ධන ටොගල් කරන්න
+:Toggle Promotions
+sn:Chinjirudza Kukwidziridza
+:Toggle Promotions
+sp-rs:Uključi/isključi promocije
+:Toggle Promotions
+sq:Aktivizo/Çaktivizo Promovime
+:Toggle Promotions
+th:สลับโปรโมชัน
+:Toggle Promotions
+tl:I-toggle ang mga Promosyon
+:Toggle Promotions
+uk:Перемкнути акції
+:Toggle Promotions
+vn:Bật/tắt Khuyến mãi

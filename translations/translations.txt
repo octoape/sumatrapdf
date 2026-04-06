@@ -1,5 +1,5 @@
 AppTranslator: SumatraPDF
-5af8599a97f390109e78dff09eb878ad7fd81ef9
+0f77efb68fb1ed8b799a61ffede6abd58e232611
 :# File History
 am:# Ֆայլի պատմություն
 ar:# سجل الملفات
@@ -10743,6 +10743,10 @@ nl:Blootstelling Tijd:
 pl:Czas ekspozycji:
 sk:Čas expozície:
 :Extract Text from PDF
+br:Extrair Texto do PDF
+co:Estrae testu da u PDF
+pl:Wyodrębnij tekst z PDF
+sk:Extrahovať text z PDF
 :F&avorites
 am:Ը&նտրյալներ
 ar:المفضلة
@@ -23845,6 +23849,10 @@ pl:Przełącz pozycję kursora
 sk:Prepnúť Polohu kurzora
 tw:切換游標位置顯示
 :Toggle Esc to Exit
+br:Pressione o Esc pra Sair
+co:Attivà o disattivà u Scap. per esce
+pl:Przełączenie Esc, aby wyjść
+sk:Prepnúť Ukončiť klávesom Esc
 :Toggle Favorites
 am:Միացնել/անջատել ընտրյալները
 br:Exibir/Ocultar os Favoritos
@@ -23950,6 +23958,7 @@ nl:Pagina Info Tonen/Verbergen
 pl:Przełącz informacje o stronie
 sk:Prepnúť Informácie o strane
 tw:切換頁面資訊
+:Toggle Promotions
 :Toggle Scrollbar In Single Page
 br:Ativar/Desativar a Barra de Rolagem na Página Única
 co:Attivà o disattivà a barra di sfilarata nant’à una pagina unica
