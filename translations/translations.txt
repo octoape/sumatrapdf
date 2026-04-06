@@ -1,5 +1,5 @@
 AppTranslator: SumatraPDF
-75da96192760cefaca393c4c11191335905c9832
+5af8599a97f390109e78dff09eb878ad7fd81ef9
 :# File History
 am:# Ֆայլի պատմություն
 ar:# سجل الملفات
@@ -2978,10 +2978,12 @@ uz:&Moslamalar
 vn:Cài đặt
 :&Shrink To Fit
 br:&Encolher pra Ajustar
+co:&Strittisce per adattassi
 de:An &Fenster anpassen
 it:&Riduci per adattare
 nl:&Verklein Tot Passend
 pl:Zmniejsz, aby &dopasować
+sk:Prispôsobiť &veľkosť
 :&Shrink pages to printable area (if necessary)
 am:&Հարմարեցնել էջը տպելու համար (եթե պահանջվում է)
 ar:(تقليص الصفحات إلى منطقة قابلة للطباعة (إذا لزم الأمر&
@@ -3699,7 +3701,7 @@ ro:&Mărire
 ru:Мас&штаб
 sat:&ᱦᱩᱰᱤᱧᱢᱟᱨᱟᱝ
 si:&විශාලනය (Z)
-sk:&Zväčšenie
+sk:Zväčšeni&e
 sl:Po&večava
 sn:&Zuma
 sp-rs:Uvećanje
@@ -3847,6 +3849,7 @@ uz:(bet %s)
 vn:(trang %s)
 :(unsaved annotations)
 br:(Anotações não salvas)
+co:(annutazioni non arregistrate)
 de:(nicht gespeicherte Anmerkungen)
 it:(annotazioni non salvate)
 nl:(niet opgeslagen notaties)
@@ -5124,8 +5127,15 @@ uk:Колір фону
 uz:Fon rangi:
 vn:Màu nền
 :Bake PDF File
+br:Assar o Arquivo PDF
+co:Creà un schedariu PDF
+de:PDF-Datei erstellen
+nl:Creëer PDF Bestand
+pl:Upiecz plik PDF
+sk:Vytvoriť súbor PDF
 :Bits Per Sample:
 br:Bits por Amostra:
+co:Bits à u campione :
 de:Bittiefe:
 it:Bit per campione
 nl:Bits per monster:
@@ -5623,6 +5633,7 @@ uz:CHM hujjatlari
 vn:Tập tin CHM
 :Camera Make:
 br:Fabricante da Câmera:
+co:Marca d’apparechju-fotò :
 de:Kameramarke:
 it:Marca fotocamera:
 nl:Camera Merk:
@@ -5630,6 +5641,7 @@ pl:Marka aparatu:
 sk:Výrobca fotoaparátu:
 :Camera Model:
 br:Modelo da Câmera:
+co:Mudellu d’apparechju-fotò :
 de:Kameramodell:
 it:Modello fotocamera:
 nl:Camera Model:
@@ -5916,6 +5928,7 @@ uz:Qayta qidirish buyrug'i xatosi. Buyruq satri parametrlarini tekshiring.
 vn:Không thể bắt đầu lệnh tìm kiếm ngược. Xin kiểm tra phần dòng lệnh trong Cài đặt.
 :Change &Scrollbar
 br:Mudar a &Barra de Rolagem
+co:Cambià a barra di &sfilarata
 de:&Bildlaufleiste ändern
 it:Modifica barra &scorrimento
 nl:Wijzig &Scrolbalk
@@ -6012,6 +6025,7 @@ sr-rs:Промени језик...
 tw:變更語言…
 :Change Scr&ollbar
 br:Mudar a Bar&ra de Rolagem
+co:Cambià a barra di s&filarata
 de:Bildlaufleiste &ändern
 it:Modifica barra sc&orrimento
 nl:Wijzig Scr&olbalk
@@ -6019,6 +6033,7 @@ pl:Zmień pasek prze&wijania
 sk:Zmeniť p&osuvník
 :Change Scrollbar
 br:Mudar a Barra de Rolagem
+co:Cambià a barra di sfilarata
 de:Bildlaufleiste ändern
 it:Modifica barra scorrimento
 nl:Wijzig Scrolbalk
@@ -6883,6 +6898,7 @@ uz:Buyruqlar paneli
 vn:Lệnh
 :Comment:
 br:Comentário:
+co:Cummentu :
 de:Kommentar:
 it:Commento:
 nl:Commentaar:
@@ -9088,6 +9104,7 @@ uz:Maxsus kattalashtirish...
 vn:Thiết Lập &Phóng...
 :DPI:
 br:DPI:
+co:DPI :
 de:DPI:
 it:DPI:
 nl:DPI
@@ -9230,6 +9247,7 @@ uz:To‘qroq
 vn:Tối hơn
 :Date Original:
 br:Data Original:
+co:Data d’origine :
 de:Originaldatum:
 it:Data/Ora originali:
 nl:Oorspronkelijke Datum:
@@ -10272,6 +10290,7 @@ sr-rs:Угради...
 tw:内嵌…
 :Encryption:
 br:Criptografia:
+co:Cifratura :
 de:Verschlüsselung:
 it:Crittografia:
 nl:Versleuteling:
@@ -10700,6 +10719,7 @@ uz:Barchasini kengaytirish
 vn:Mở Rộng Tất Cả
 :Exposure Bias:
 br:Tendência da Exposição:
+co:Scartu d’espusizione :
 de:Belichtungskorrektur:
 it:Distorsione esposizione:
 nl:Blootstelling Bias
@@ -10707,6 +10727,7 @@ pl:Błąd ekspozycji:
 sk:Odchýlka expozície:
 :Exposure Program:
 br:Programa de Exposição:
+co:Prugramma d’espusizione :
 de:Belichtungsprogramm:
 it:Programma esposizione:
 nl:Blootstelling Programma:
@@ -10714,11 +10735,14 @@ pl:Program ekspozycji:
 sk:Expozičný program:
 :Exposure Time:
 br:Tempo de Exposição:
+cn:曝光时间
+co:Durata d’espusizione :
 de:Belichtungszeit:
 it:Tempo esposizione:
 nl:Blootstelling Tijd:
 pl:Czas ekspozycji:
 sk:Čas expozície:
+:Extract Text from PDF
 :F&avorites
 am:Ը&նտրյալներ
 ar:المفضلة
@@ -10890,6 +10914,7 @@ uz:To‘liq ekran
 vn:Toàn Màn Hình
 :F-Number:
 br:Número-F:
+co:Numeru F :
 de:F-Nummer:
 it:Valore F:
 nl:F Nummer:
@@ -11713,6 +11738,7 @@ uz:Fayl hajmi:
 vn:Kích thước:
 :File path not available
 br:O caminho do arquivo não está disponível
+co:Chjassu di schedariu undispunibule
 de:Dateipfad nicht verfügbar
 it:Percorso file non disponibile
 nl:Bestand pad niet beschikbaar
@@ -12392,7 +12418,7 @@ ro:Potrivire după conținut
 ru:По содержимому
 sat:ᱡᱤᱱᱤᱥ ᱠᱷᱟᱯ ᱢᱮ
 si:නිසිලෙස අන්තර්ගතය සකසන්න
-sk:Prispôsobiť obsah
+sk:Prispôsobiť obsahu
 sl:Prilagodi vsebino
 sp-rs:Podesi prema sadržaju
 sq:Përshtat materialin
@@ -12684,6 +12710,7 @@ uz:Bitta betga moslash
 vn:Vừa một trang đơn
 :Flash:
 br:Flash:
+co:Lampu :
 de:Blitz:
 it:Flash:
 nl:Flits
@@ -12691,6 +12718,7 @@ pl:Lampa błyskowa:
 sk:Blesk:
 :Focal Length (35mm):
 br:Tamanho do Foco (35 mm):
+co:Lunghezza fucale (35mm) :
 de:Brennweite (35 mm):
 it:Lunghezza focale (35 mm):
 nl:Brandpunt afstand (35mm):
@@ -12698,6 +12726,8 @@ pl:Ogniskowa (35 mm):
 sk:Ohnisková vzdialenosť (35 mm):
 :Focal Length:
 br:Tamanho do Foco:
+cn:焦距
+co:Lunghezza fucale :
 de:Brennweite:
 it:Lunghezza focale:
 nl:Brandpunt afstand:
@@ -13433,6 +13463,7 @@ sk:Domov
 tw:首頁
 :ISO Speed:
 br:Velocidade da ISO:
+co:Vitezza ISO :
 de:ISO-Empfindlichkeit:
 it:Velocità ISO:
 nl:ISO Gevoeligheid:
@@ -14271,6 +14302,7 @@ uz:KB
 vn:KB
 :Keywords:
 br:Palavras-Chave:
+co:Parolle chjave :
 de:Schlüsselwörter:
 it:Parole chiave:
 nl:Sleutelwoorden:
@@ -14905,6 +14937,7 @@ tw:線上說明
 uz:Veb-saytda qo‘llanma
 :Metering Mode:
 br:Modo de Medição:
+co:Modu di misura :
 de:Messmodus:
 it:Modalità misurazione:
 nl:Meet Modus:
@@ -17025,6 +17058,7 @@ sk:Možnosti…
 tw:選項…
 :Orientation:
 br:Orientação:
+co:Orientazione :
 de:Ausrichtung:
 it:Orientamento:
 nl:Oriëntatie:
@@ -19031,6 +19065,7 @@ uk:Властивості...
 uz:Xususiyatlar...
 :R&esize
 br:R&edimensionar
+co:R&idimensione
 de:Gr&öße ändern
 it:Ridim&ensiona
 nl:W&ijzig Formaat
@@ -19564,13 +19599,26 @@ pl:Zmień rozmiar
 sk:Zmeniť veľkosť
 :Resize Image
 br:Redimensionar Imagem
+co:Ridimensione di a fiura
 de:Bildgröße ändern
 it:Ridimensiona immagine
 nl:Wijzig Afbeelding Formaat
 pl:Zmień rozmiar obrazu
 sk:Zmeniť veľkosť obrázka
 :Restore
+br:Restaurar
+co:Risturà
+de:Wiederherstellen
+nl:Herstel
+pl:Przywróć
+sk:Obnoviť
 :Restore Tab Group
+br:Restaurar o Grupo de Abas
+co:Risturà u gruppu d’unghjette
+de:Tabgruppe wiederherstellen
+nl:Herstel Tab Groep
+pl:Przywróć grupę kart
+sk:Obnoviť skupinu kariet
 :Rotate &Left
 am:Պտտել &ձախ
 ar:دوّ&ر يسارا
@@ -20120,9 +20168,11 @@ uz:Qisqa yo‘lni saqlash
 vn:Lưu Đ&ường Tắt
 :Save Tab Group
 br:Salvar o Grupo das Abas
+co:Arregistrà u gruppu d’unghjette
 de:Tabgruppe speichern
 nl:Tab Groep Opslaan
 pl:Zapisz grupę kart
+sk:Uložiť skupinu kariet
 :Save annotations?
 am:Պահե՞լ մեկնաբանությունը?
 ar:أحفظ الشروحات؟
@@ -20589,6 +20639,12 @@ pl:Przewiń w górę o stronę
 sk:Posúvať hore na strane
 tw:向上捲動一頁
 :Search Bookmarks
+br:Procurar Favoritos
+co:Ricercà in l’indette
+de:Lesezeichen suchen
+nl:Zoek Bladwijzers
+pl:Wyszukaj zakładki
+sk:Hľadať v záložkách
 :Search Selection with Bing
 am:Որոնել ընտրումը Bing-ի միջոցով
 br:Procurar Seleção com Bing
@@ -21485,10 +21541,12 @@ uz:Sevimlilarni ko‘rsatish
 vn:Hiện mục Ưa thích
 :Show &Menu
 br:Mostrar &Menu
+co:Affissà u &listinu
 de:&Menü anzeigen
 it:Mostra &menu
 nl:Toon &Menu
 pl:Pokaż &menu
+sk:Zobraziť po&nuku
 :Show &Pages Continuously
 am:Էջերը &ցուցադրել շարունակական
 ar:اظهار الصفحات باستمرار
@@ -21813,6 +21871,12 @@ nl:Toon PDF Info
 pl:Pokaż informacje o PDF
 sk:Zobraziť informácie o PDF
 :Show PDF Outline
+br:Mostrar o Contorno do PDF
+co:Affissà u cuntornu di u PDF
+de:PDF-Gliederung anzeigen
+nl:Toon PDF Overzicht
+pl:Pokaż konspekt PDF
+sk:Zobraziť osnovu PDF
 :Show frequently read
 am:Ցուցադրել հաճախակի բացվածները
 ar:إظهار الأكثر قراءة
@@ -22056,10 +22120,12 @@ uz:Mavjud bo'lganda &xatcho'plar panelini ko'rsatish
 vn:Hiện chỉ dấu sách nếu có
 :Shrink To Fit
 br:Encolher pra Ajustar
+co:Strittisce per adattassi
 de:An Fenster anpassen
 it:Riduci per adattare
 nl:Verklein Tot Passend
 pl:Zmniejsz, aby dopasować
+sk:Prispôsobiť veľkosť
 :Single Page
 af:Enkele Bladsy
 am:Մեկ էջ
@@ -22153,7 +22219,7 @@ co:Frizzulà l’unghjetta seguente
 de:Intelligenter nächster Tab
 el:Έξυπνη επόμενη καρτέλα
 it:Scheda successiva smart
-nl:Slimme Volgende Tab
+nl:Slim Volgende Tab
 pl:Następna karta inteligentnie
 sk:Inteligentné prepínanie kariet
 tw:智慧切換下一個分頁
@@ -23015,6 +23081,12 @@ uk:Неможливо відкрити файл синхронізації
 uz:Sinxronlanish faylini ochib bo'lmadi
 vn:Không mở được tập tin đồng bộ
 :Tab Groups
+br:Grupos de Abas
+co:Gruppi d’unghjette
+de:Tabgruppen
+nl:Tab Groepen
+pl:Grupy kart
+sk:Skupiny kariet
 :Tagged PDF
 am:Կցված PDF
 ar:المستندات المحمولة موسومة
@@ -23772,6 +23844,7 @@ nl:Cursor Positie Wisselen
 pl:Przełącz pozycję kursora
 sk:Prepnúť Polohu kurzora
 tw:切換游標位置顯示
+:Toggle Esc to Exit
 :Toggle Favorites
 am:Միացնել/անջատել ընտրյալները
 br:Exibir/Ocultar os Favoritos
@@ -23822,6 +23895,7 @@ sk:Prepnúť Inverzné vyhľadávanie
 tw:切換反向搜尋
 :Toggle Lazy Loading
 br:Ativar/Desativar o Carregamento Lento
+co:Attivà o disattivà u caricamentu fannullone
 de:Träges Laden ein-/ausschalten
 it:Commuta Caricamento differito
 nl:Langzaam laden IN\UIT Schakelen
@@ -23878,6 +23952,7 @@ sk:Prepnúť Informácie o strane
 tw:切換頁面資訊
 :Toggle Scrollbar In Single Page
 br:Ativar/Desativar a Barra de Rolagem na Página Única
+co:Attivà o disattivà a barra di sfilarata nant’à una pagina unica
 de:Bildlaufleiste auf einer Seite ein-/ausblenden
 it:Commuta Barra scorrimento su pagina singola
 nl:Schuifbalk IN/UIT Schakelen op enkele pagina
@@ -23909,6 +23984,7 @@ sk:Prepnúť Zobraziť odkazy
 tw:切換顯示連結
 :Toggle Smooth Scroll
 br:Ativar/Desativar a Rolagem Suave
+co:Attivà o disattivà a barra di sfilarata dolce
 de:Sanftes Scrollen umschalten
 it:Commuta Scorrimento attenuato
 nl:Vloeiend Scrollen IN/UIT Schakelen
@@ -23928,6 +24004,7 @@ sk:Prepnúť Obsah
 tw:切換目錄
 :Toggle Tabs MRU Order
 br:Ativar/Desativar a Ordem da MRU das Abas
+co:Attivà o disattivà l’ordine MRU di l’unghjette
 de:Reihenfolge der zuletzt verwendeten Tabs umkehren
 it:Commuta Ordine schede usate di recente
 nl:IN/UIT Schakelen Tabbladen MRU Volgorde
@@ -24744,6 +24821,8 @@ uz:Diqqat
 vn:Cảnh báo
 :White Balance:
 br:Equilíbrio dos Brancos:
+cn:白平衡
+co:Bilancia di biancu :
 de:Weißabgleich:
 it:Bilanciamento bianco:
 nl:Wit Balance:
@@ -25590,10 +25669,12 @@ sk:Zväčšiť: Prispôsobiť šírke a zobrazovať stránky priebežne
 tw:縮放：符合頁寬，連續顯示
 :Zoom: Shrink To Fit
 br:Zoom: Encolher pra Ajustar
+co:Ingrandamentu : Strittisce per adattassi
 de:Zoom: An Fenster anpassen
 it:Zoom: riduci per adattare
 nl:Zoom: Verklein Tot passend
 pl:Powiększenie: zmniejsz, aby dopasować
+sk:Zväčšenie: Prispôsobiť veľkosť
 :[Changes detected; refreshing] %s
 am:[Հայտնաբերվել են փոփոխություններ, ընթանում է թարմացում] %s
 ar:%s [تغييرات إكتشفت؛ المنعش]

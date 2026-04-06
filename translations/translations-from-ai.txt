@@ -43832,3 +43832,291 @@ vn:Khôi phục
 vn:Tìm kiếm dấu trang
 :Tab Groups
 vn:Nhóm thẻ
+:Extract Text from PDF
+am:ከፒዲኤፍ ጽሑፍ ያውጡ
+:Toggle Esc to Exit
+am:ለመውጣት Esc ይጫኑ
+:Extract Text from PDF
+ar:استخراج النص من PDF
+:Toggle Esc to Exit
+ar:اضغط Esc للخروج
+:Extract Text from PDF
+br:Eztennañ testenn eus PDF
+:Toggle Esc to Exit
+br:Pouezañ war Esc evit kuitaat
+:Extract Text from PDF
+cn:从PDF提取文本
+:Toggle Esc to Exit
+cn:按Esc退出
+:Extract Text from PDF
+co:Estrae u testu da u PDF
+:Toggle Esc to Exit
+co:Appughjà Esc per esce
+:Extract Text from PDF
+de:Text aus PDF extrahieren
+:Toggle Esc to Exit
+de:Esc zum Beenden drücken
+:Extract Text from PDF
+el:Εξαγωγή κειμένου από PDF
+:Toggle Esc to Exit
+el:Πατήστε Esc για έξοδο
+:Extract Text from PDF
+hi:PDF से टेक्स्ट निकालें
+:Toggle Esc to Exit
+hi:बाहर निकलने के लिए Esc दबाएं
+:Extract Text from PDF
+it:Estrai testo da PDF
+:Toggle Esc to Exit
+it:Premi Esc per uscire
+:Extract Text from PDF
+ja:PDFからテキストを抽出
+:Toggle Esc to Exit
+ja:Escキーで終了を切り替え
+:Extract Text from PDF
+ml:PDF-ൽ നിന്ന് ടെക്സ്റ്റ് എക്സ്ട്രാക്റ്റ് ചെയ്യുക
+:Toggle Esc to Exit
+ml:പുറത്തുകടക്കാൻ Esc ടോഗിൾ ചെയ്യുക
+:Extract Text from PDF
+nl:Tekst uit PDF extraheren
+:Toggle Esc to Exit
+nl:Druk op Esc om af te sluiten
+:Extract Text from PDF
+pl:Wyodrębnij tekst z PDF
+:Toggle Esc to Exit
+pl:Naciśnij Esc, aby wyjść
+:Extract Text from PDF
+ru:Извлечь текст из PDF
+:Toggle Esc to Exit
+ru:Нажмите Esc для выхода
+:Extract Text from PDF
+sk:Extrahovať text z PDF
+:Toggle Esc to Exit
+sk:Stlačte Esc pre ukončenie
+:Extract Text from PDF
+sr-rs:Извуци текст из PDF-а
+:Toggle Esc to Exit
+sr-rs:Притисни Esc за излаз
+:Extract Text from PDF
+tw:從 PDF 擷取文字
+:Toggle Esc to Exit
+tw:按 Esc 鍵退出
+:Extract Text from PDF
+az:PDF-dən Mətni Çıxart
+:Toggle Esc to Exit
+az:Çıxmaq üçün Esc düyməsinə basın
+:Extract Text from PDF
+by:Выняць тэкст з PDF
+:Toggle Esc to Exit
+by:Націсніце Esc для выхаду
+:Extract Text from PDF
+ca:Extreu text del PDF
+:Toggle Esc to Exit
+ca:Prem Esc per sortir
+:Extract Text from PDF
+cy:Echdynnu Testun o PDF
+:Toggle Esc to Exit
+cy:Toglo Esc i Adael
+:Extract Text from PDF
+cz:Extrahovat text z PDF
+:Toggle Esc to Exit
+cz:Stiskněte Esc pro ukončení
+:Extract Text from PDF
+es:Extraer texto de PDF
+:Toggle Esc to Exit
+es:Presiona Esc para salir
+:Extract Text from PDF
+fa:استخراج متن از PDF
+:Toggle Esc to Exit
+fa:فشار Esc برای خروج
+:Extract Text from PDF
+fi:Pura teksti PDF:stä
+:Toggle Esc to Exit
+fi:Paina Esc poistuaksesi
+:Extract Text from PDF
+fo:Útdráttur tekst úr PDF
+:Toggle Esc to Exit
+fo:Esc fyri at fara út
+:Extract Text from PDF
+fr:Extraire le texte du PDF
+:Toggle Esc to Exit
+fr:Appuyez sur Échap pour quitter
+:Extract Text from PDF
+ga:Bain Téacs as PDF
+:Toggle Esc to Exit
+ga:Scoránaigh Esc chun Scoir
+:Extract Text from PDF
+gl:Extraer texto do PDF
+:Toggle Esc to Exit
+gl:Premer Esc para saír
+:Extract Text from PDF
+he:חילוץ טקסט מ-PDF
+:Toggle Esc to Exit
+he:לחץ Esc ליציאה
+:Extract Text from PDF
+hu:Szöveg kinyerése PDF-ből
+:Toggle Esc to Exit
+hu:Esc billentyű a kilépéshez
+:Extract Text from PDF
+id:Ekstrak Teks dari PDF
+:Toggle Esc to Exit
+id:Tekan Esc untuk Keluar
+:Extract Text from PDF
+kr:PDF에서 텍스트 추출
+:Toggle Esc to Exit
+kr:Esc 키로 종료
+:Extract Text from PDF
+lv:Iegūt tekstu no PDF
+:Toggle Esc to Exit
+lv:Nospiediet Esc, lai izietu
+:Extract Text from PDF
+my:PDF မှ စာသားထုတ်ယူရန်
+:Toggle Esc to Exit
+my:ထွက်ရန် Esc ကိုနှိပ်ပါ
+:Extract Text from PDF
+pt:Extrair Texto do PDF
+:Toggle Esc to Exit
+pt:Pressione Esc para Sair
+:Extract Text from PDF
+ro:Extrage text din PDF
+:Toggle Esc to Exit
+ro:Apasă Esc pentru a ieși
+:Extract Text from PDF
+sat:PDF ᱠᱷᱚᱱ ᱚᱞ ᱚᱰᱚᱠ ᱢᱮ
+:Toggle Esc to Exit
+sat:ᱵᱟᱦᱨᱮ ᱞᱟᱹᱜᱤᱫ Esc ᱴᱚᱜᱚᱞ ᱢᱮ
+:Extract Text from PDF
+sl:Izvleči besedilo iz PDF
+:Toggle Esc to Exit
+sl:Pritisni Esc za izhod
+:Extract Text from PDF
+sv:Extrahera text från PDF
+:Toggle Esc to Exit
+sv:Tryck Esc för att avsluta
+:Extract Text from PDF
+ta:PDF இலிருந்து உரையைப் பிரித்தெடு
+:Toggle Esc to Exit
+ta:வெளியேற Esc ஐ அழுத்தவும்
+:Extract Text from PDF
+tr:PDF'den Metin Çıkar
+:Toggle Esc to Exit
+tr:Çıkmak için Esc'ye Basın
+:Extract Text from PDF
+uz:PDF dan matnni ajratib olish
+:Toggle Esc to Exit
+uz:Chiqish uchun Esc tugmasini bosing
+:Extract Text from PDF
+af:Onttrek Teks uit PDF
+:Toggle Esc to Exit
+af:Skakel Esc om te Sluit
+:Extract Text from PDF
+bg:Извличане на текст от PDF
+:Toggle Esc to Exit
+bg:Натиснете Esc за изход
+:Extract Text from PDF
+bn:PDF থেকে টেক্সট বের করুন
+:Toggle Esc to Exit
+bn:প্রস্থান করতে Esc টগল করুন
+:Extract Text from PDF
+bs:Izvuci tekst iz PDF-a
+:Toggle Esc to Exit
+bs:Pritisni Esc za izlaz
+:Extract Text from PDF
+ca-xv:Extreure text del PDF
+:Toggle Esc to Exit
+ca-xv:Prem Esc per sortir
+:Extract Text from PDF
+dk:Udtræk tekst fra PDF
+:Toggle Esc to Exit
+dk:Tryk Esc for at afslutte
+:Extract Text from PDF
+et:Ekstrakti tekst PDF-ist
+:Toggle Esc to Exit
+et:Väljumiseks vajuta Esc
+:Extract Text from PDF
+eu:Erauzi testua PDF-tik
+:Toggle Esc to Exit
+eu:Sakatu Esc irteteko
+:Extract Text from PDF
+fy-nl:Tekst út PDF helje
+:Toggle Esc to Exit
+fy-nl:Druk op Esc om ôf te sluten
+:Extract Text from PDF
+hr:Izdvoji tekst iz PDF-a
+:Toggle Esc to Exit
+hr:Pritisnite Esc za izlaz
+:Extract Text from PDF
+jv:Ekstrak Teks saka PDF
+:Toggle Esc to Exit
+jv:Pencet Esc kanggo Metu
+:Extract Text from PDF
+ka:ტექსტის ამოღება PDF-დან
+:Toggle Esc to Exit
+ka:Esc-ით გასასვლელად
+:Extract Text from PDF
+ku:Nivîsê ji PDF-ê Derxîne
+:Toggle Esc to Exit
+ku:Ji bo Derketin Esc Biguhêre
+:Extract Text from PDF
+kw:Drehevel Tekst dhyworth PDF
+:Toggle Esc to Exit
+kw:Kelmya Esc dhe Dhiberth
+:Extract Text from PDF
+lt:Išgauti tekstą iš PDF
+:Toggle Esc to Exit
+lt:Perjungti Esc, kad išeitumėte
+:Extract Text from PDF
+mk:Извлечи текст од PDF
+:Toggle Esc to Exit
+mk:Притисни Esc за излез
+:Extract Text from PDF
+mm:PDF မှ စာသားထုတ်ယူရန်
+:Toggle Esc to Exit
+mm:ထွက်ရန် Esc ခလုတ်နှိပ်ပါ
+:Extract Text from PDF
+ne:PDF बाट पाठ निकाल्नुहोस्
+:Toggle Esc to Exit
+ne:बाहिर निस्कन Esc टगल गर्नुहोस्
+:Extract Text from PDF
+nn:Hent ut tekst frå PDF
+:Toggle Esc to Exit
+nn:Trykk Esc for å avslutte
+:Extract Text from PDF
+no:Trekk ut tekst fra PDF
+:Toggle Esc to Exit
+no:Trykk Esc for å avslutte
+:Extract Text from PDF
+pa:PDF ਤੋਂ ਟੈਕਸਟ ਕੱਢੋ
+:Toggle Esc to Exit
+pa:ਬਾਹਰ ਜਾਣ ਲਈ Esc ਦਬਾਓ
+:Extract Text from PDF
+si:PDF වෙතින් පෙළ නිස්සාරණය කරන්න
+:Toggle Esc to Exit
+si:පිටවීමට Esc Toggle කරන්න
+:Extract Text from PDF
+sn:Bvisa Mavara kubva kuPDF
+:Toggle Esc to Exit
+sn:Dzvanya Esc kuti Ubude
+:Extract Text from PDF
+sp-rs:Извуци текст из PDF-а
+:Toggle Esc to Exit
+sp-rs:Притисни Esc за излаз
+:Extract Text from PDF
+sq:Nxirr Tekst nga PDF
+:Toggle Esc to Exit
+sq:Shtyp Esc për të Dalë
+:Extract Text from PDF
+th:แยกข้อความจาก PDF
+:Toggle Esc to Exit
+th:กด Esc เพื่อออก
+:Extract Text from PDF
+tl:Kunin ang Teksto mula sa PDF
+:Toggle Esc to Exit
+tl:Pindutin ang Esc upang Lumabas
+:Extract Text from PDF
+uk:Витягти текст з PDF
+:Toggle Esc to Exit
+uk:Натисніть Esc для виходу
+:Extract Text from PDF
+vn:Trích xuất văn bản từ PDF
+:Toggle Esc to Exit
+vn:Nhấn Esc để thoát
